@@ -24,24 +24,41 @@ def two_sum_unique(arr,target):
     return store
 '''
 
-def two_sum_unique( arr, target):
-    arr.sort()
-    i, j = 0, len(arr) - 1
-    res = 0
-    while i < j:
-        if arr[i] + arr[j] < target:
-            i += 1
-        elif arr[i] + arr[j] > target:
-            j -= 1
-        else:
-            res += 1
-            vi, vj = arr[i], arr[j]
-            while i < j and arr[i] == vi:
-                i += 1
-            while i < j and arr[j] == vj:
-                j -= 1
-    return res #returns no of pair that are eligible
+# def two_sum_unique( arr, target):
+#     arr.sort()
+#     i, j = 0, len(arr) - 1
+#     res = 0
+#     while i < j:
+#         if arr[i] + arr[j] < target:
+#             i += 1
+#         elif arr[i] + arr[j] > target:
+#             j -= 1
+#         else:
+#             res += 1
+#             vi, vj = arr[i], arr[j]
+#             while i < j and arr[i] == vi:
+#                 i += 1
+#             while i < j and arr[j] == vj:
+#                 j -= 1
+#     return res #returns no of pair that are eligible
         
-arr= [1, 1, 2, 45, 46, 46]
-target = 47
-print(two_sum_unique(arr,target))
+# arr= [1, 1, 2, 45, 46, 46]
+# target = 47
+# print(two_sum_unique(arr,target))
+
+
+
+
+threshold = int(input("threshold: "))
+
+
+def count(chunks):
+    return len(chunks.split())
+
+
+length = count("Hi from python i am working here as a full stack developer")
+
+if length > threshold:
+    print("chunk too large")
+else:
+    print("chunk within limit")

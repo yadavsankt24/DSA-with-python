@@ -81,13 +81,10 @@ print(result)
 '''
 
 # APPROACH 3 (optimized two-pointer)
-'''
 def twoSum(numbers, target):
-    """
-    :type numbers: List[int]
-    :type target: int
-    :rtype: List[int]
-    """
+    # :type numbers: List[int]
+    # :type target: int
+    # :rtype: List[int]
 
     left = 0
     right = len(numbers)-1
@@ -106,4 +103,3 @@ target = 5
 result = twoSum(array,target)
 print(result)
 
-'''
